@@ -1,0 +1,16 @@
+<h1>Contactez moi</h1>
+
+<h3>disponibilités du lundi au vendredi:</h3>
+<ul>
+  <li *ngFor=" let horaire of timetocall">{{horaire}}</li>
+</ul>
+
+<ul>
+  <li>Name: {{name}}</li>
+  <li>Age: {{age}}</li>
+  <li>Email: {{email}}</li>
+  <li>{{address.street}}, {{address.zipcode}} {{address.city}}, {{address.state}}</li>
+</ul>
+
+
+<button (click)="onClick()" type="button" name="button">Télécharger CV</button>
