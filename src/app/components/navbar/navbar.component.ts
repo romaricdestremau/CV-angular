@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
     } else{
       this.PageIsTop = true;
     }
-    console.log('host listening is happenning');
+    //console.log('host listening is happenning');
   }
 
 }

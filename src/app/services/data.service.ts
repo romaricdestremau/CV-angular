@@ -19,4 +19,9 @@ export class DataService {
     return this.http.get('../../assets/experiences.json').map(res => res.json());
   }
 
+  getFooter(){
+    console.log('footer recu')
+    return this.http.get('../../assets/footer.json').map(res => res.json());
+  }
+
 }
