@@ -1,0 +1,12 @@
+header{
+    margin-top: -54px;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../../../assets/img/selfielama.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+
+#header-content{
+    padding-top: 120px;
+    padding-bottom: 400px;
+}

@@ -1,3 +1,48 @@
-<p>
-  navbar works!
-</p>
+<div class="nav-container" class="static">
+  <nav role="navigation" class="navbar navbar-default navbar-static-top">
+    <div class="container justify-content-end">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Formations</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Expériences</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+<div class="nav-container fixed-top" [class.invisible]="PageIsTop">
+  <nav role="navigation" class="navbar navbar-default navbar-static-top">
+    <div class="container justify-content-end">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Formations</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">blabla</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-uppercase nav-link" href="#">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
