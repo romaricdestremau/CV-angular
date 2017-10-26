@@ -11,6 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
 // Import manuel
 import { DataService } from './services/data.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HobbiesComponent } from './components/hobbies/hobbies.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FormationComponent,
     HeaderComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    HobbiesComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

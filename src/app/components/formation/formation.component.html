@@ -1,14 +1,46 @@
-<h2>Formations</h2>
+<section>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-4 mt-4">
+        <h3>Formations</h3>
+      </div>
 
-<div *ngFor="let formation of formations">
-  <h4>{{formation.periode}}</h4>
-  <p>{{formation.formation}}</p>
-</div>
+      <div class="col-8">
+        <div *ngFor="let formation of formations" class="row my-4">
+          <div class="col-8">
+            {{formation.formation}}
+          </div>
+          <div class="col-4">
+            {{formation.periode}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8 mx-auto">
+        <hr>
+      </div>
+    </div>
 
 
-<h2>Experiences</h2>
+    <div class="row">
+      <div class="col-4 mt-4">
+        <h3>Experiences</h3>
+      </div>
 
-<div *ngFor="let experience of experiences">
-  <h4>{{experience.periode}}</h4>
-  <p>{{experience.experience}}</p>
-</div>
+      <div class="col-8">
+        <div *ngFor="let experience of experiences" class="row my-4">
+          <div class="col-8">
+            {{experience.experience}}
+          </div>
+          <div class="col-4">
+            {{experience.periode}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
