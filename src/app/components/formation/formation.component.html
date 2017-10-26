@@ -1,6 +1,14 @@
 <h2>Formations</h2>
 
-<div *ngFor="let post of posts">
-  <h4>{{post.title}}</h4>
-  <p>{{post.body}}</p>
+<div *ngFor="let formation of formations">
+  <h4>{{formation.periode}}</h4>
+  <p>{{formation.formation}}</p>
+</div>
+
+
+<h2>Experiences</h2>
+
+<div *ngFor="let experience of experiences">
+  <h4>{{experience.periode}}</h4>
+  <p>{{experience.experience}}</p>
 </div>

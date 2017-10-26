@@ -7,26 +7,19 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./formation.component.css']
 })
 export class FormationComponent implements OnInit {
-  posts:Post[];
+  formations:Formation[];
+  experiences:Experience[];
 
-  constructor(private dataService:DataService) {
-    console.log('constructor ran..')
-
-  }
+  constructor(private dataService:DataService) { }
 
   ngOnInit() {
-    console.log('ngOnInit ran...');
-    this.dataService.getFormations().subscribe((posts) => {
-      //console.log(posts);
-      this.posts = posts;
-    })
+    this.dataService.getFormations().subscribe((formations) => {this.formations = formations;}),
+    this.dataService.getExperiences().subscribe((experiences) => {this.experiences = experiences;})
   }
 }
 
 
 
-interface Post{
-  id:number,
-  title:string,
-  body:string
-}
+interface Formation{}
+
+interface Experience{}

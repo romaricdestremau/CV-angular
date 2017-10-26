@@ -10,8 +10,13 @@ export class DataService {
   }
 
   getFormations(){
-    return this.http.get('https://jsonplaceholder.typicode.com/posts')
-      .map(res => res.json());
+    console.log('formation recu')
+    return this.http.get('../../assets/formations.json').map(res => res.json());
+  }
+
+  getExperiences(){
+    console.log('experience recu')
+    return this.http.get('../../assets/experiences.json').map(res => res.json());
   }
 
 }
