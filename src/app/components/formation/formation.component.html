@@ -1,17 +1,19 @@
 <section>
   <div class="container py-5">
     <div class="row">
-      <div class="col-4 mt-4">
+      <div class="col-3 mt-4">
         <h3>Formations</h3>
       </div>
 
-      <div class="col-8">
+      <div class="col-9">
         <div *ngFor="let formation of formations" class="row my-4">
-          <div class="col-8">
-            {{formation.formation}}
+          <div class="col-10">
+            <h6>{{formation.formation}}</h6>
+            <p class="font-italic">{{formation.lieu}}</p>
           </div>
-          <div class="col-4">
+          <div class="col-2">
             {{formation.periode}}
+            <p class="font-italic">{{formation.duree}}</p>
           </div>
         </div>
       </div>
@@ -25,18 +27,23 @@
 
 
     <div class="row">
-      <div class="col-4 mt-4">
+      <div class="col-3 mt-4">
         <h3>Experiences</h3>
       </div>
 
-      <div class="col-8">
+      <div class="col-9">
         <div *ngFor="let experience of experiences" class="row my-4">
-          <div class="col-8">
-            <h5>{{experience.experience}}</h5>
-            <p>{{experience.lieu}}</p>
+          <div class="col-10">
+            <h6>{{experience.experience}}</h6>
+            {{experience.description1}}
+            {{experience.description2}}
+            <p class="font-italic">{{experience.lieu}}</p>
           </div>
-          <div class="col-4">
-            {{experience.periode}}
+          <div class="col-2">
+            {{experience.periode}} <br class="py-0">
+            {{experience.periode1}}
+            {{experience.periode2}}
+            <p class="font-italic">{{experience.duree}}</p>
           </div>
         </div>
       </div>

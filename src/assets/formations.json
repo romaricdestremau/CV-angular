@@ -1,17 +1,20 @@
 [
   {
-    "id": 1,
-    "periode": "2017-2018",
-    "formation": "Alternant architecte système et réseau windows chez Edmond​ ​de​ ​Rothschild."
+    "periode": "2013-2019",
+    "formation": "Master en “Système d’Information,​ ​Cybersécurité​ ​et​ ​Big​ ​Data​”.",
+    "lieu": "ECE Paris (Ecole d'ingénieur généraliste et high-tech)",
+    "duree": "Cinq ans"
   },
   {
-    "id": 1,
     "periode": "2015-2016",
-    "formation": "blabla"
+    "formation": "Bachelor in science Engineering",
+    "lieu": "Université AAU​ ​Aalborg au Danemark",
+    "duree": "Un semestre"
   },
   {
-    "id": 1,
-    "periode": "2015-2016",
-    "formation": "Alternant chez edmond de rothschild"
+    "periode": "2010-2013",
+    "formation": "Baccalauréat S, option mathématiques",
+    "lieu": "Lycée Stanislas​ (Internat)",
+    "duree": "Trois ans"
   }
 ]

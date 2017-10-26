@@ -1,22 +1,41 @@
 [
   {
-    "id": 1,
-    "periode": "2017-2018",
-    "experience": "voyage velo",
-    "lieu": "Amerique Latine"
+    "periode": "2017-2019",
+    "experience": "Architecte système et réseau windows.",
+    "lieu": "Edmond​ ​de​ ​Rothschild (Alternant)",
+    "duree": "Deux ans"
   },
   {
-    "id": 1,
-    "periode": "2015-2016",
-    "experience": "blabla",
-    "lieu": "Amerique Latine"
-
+    "periode": "2016-2017",
+    "experience": "Voyage à deux pendant un an en vélo en Amérique Latine pour promouvoir​ ​les​ ​énergies​ ​renouvelables.​",
+    "lieu": "Mexico (Mexique)-> Santiago (Chili) -> Rio de Janeiro (Brésil)",
+    "duree": "Un an (Césure)"
   },
   {
-    "id": 1,
+    "periode": "2016",
+    "experience": "Développeur web (HTML, CSS, PHP, MySQL) avec Bootstrap et Symfony.",
+    "lieu": "Bziiit (Stage)",
+    "duree": "Six semaines"
+  },
+  {
     "periode": "2015-2016",
-    "experience": "Alternant systeme et réseau",
-    "lieu": "Edmond de rothschild"
-
+    "experience": "​ ​Modélisation,​ ​simulation,​ ​et​ ​prototypage​ ​d’une​ ​tondeuse​ ​à​ ​gazon​ ​autonome.",
+    "lieu": "Université AAU​ ​Aalborg au Danemark (Projet Intensif)",
+    "duree": "Un semestre"
+  },
+  {
+    "periode": "2015",
+    "experience": "​Développeur de leur site web (HTML, CSS, JS, peu de PHP) avec Foundation.",
+    "lieu": "​Swapasap (Stage​)",
+    "duree": "Un mois"
+  },
+  {
+    "periode1": "2014-2015",
+    "periode2": "2013-2014",
+    "experience": "​PSTE:​ ​Projet​ ​Scientifique​ ​Technique​ ​par​ ​Équipe​ ​(i​ncluant un programme en C et un prototype)",
+    "description1": "Développement d'un système de reconnaissance de l'iris, en vue d'identifier un être humain.",
+    "description2": "Développement d’un régulateur de vitesse actif, un pas vers la voiture autonome..",
+    "lieu": "​ECE Paris (Projet année)",
+    "duree": "Un an"
   }
 ]
