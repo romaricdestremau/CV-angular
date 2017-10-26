@@ -2,16 +2,21 @@
   {
     "id": 1,
     "periode": "2017-2018",
-    "experience": "voyage velo"
+    "experience": "voyage velo",
+    "lieu": "Amerique Latine"
   },
   {
     "id": 1,
     "periode": "2015-2016",
-    "experience": "blabla"
+    "experience": "blabla",
+    "lieu": "Amerique Latine"
+
   },
   {
     "id": 1,
     "periode": "2015-2016",
-    "experience": "Alternant chez edmond de rothschild"
+    "experience": "Alternant systeme et réseau",
+    "lieu": "Edmond de rothschild"
+
   }
 ]
