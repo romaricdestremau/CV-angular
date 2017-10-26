@@ -1,3 +1,7 @@
+Ce projet à été créé en suivant cette vidéo: https://www.youtube.com/watch?v=KhzGSHNhnbI
+
+
+
 # CVAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
