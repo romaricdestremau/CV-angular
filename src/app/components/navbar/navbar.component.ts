@@ -8,7 +8,6 @@ import { DOCUMENT } from '@angular/platform-browser';
 })
 export class NavbarComponent implements OnInit {
   public navIsFixed: boolean = false;
-  public PageIsTop: boolean = true;
 
   constructor(@Inject(DOCUMENT) private document: Document) { }
 
@@ -21,9 +20,9 @@ export class NavbarComponent implements OnInit {
   onWindowScroll() {
     let number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (number > 42) {
-      this.PageIsTop = false;
+      this.navIsFixed = true;
     } else{
-      this.PageIsTop = true;
+      this.navIsFixed = false;
     }
     //console.log('host listening is happenning');
   }

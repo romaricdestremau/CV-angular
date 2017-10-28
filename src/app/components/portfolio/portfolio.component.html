@@ -1,5 +1,17 @@
 <div id="portfolio"></div>
 
+<div class="row">
+  <div class="columns">
+    <button (click)="toggleMove()">Press me for animation</button>
+  </div>
+  <div class="columns">
+    <div id="content" [@focusPanel]='state' [@movePanel]='state'>Look at me animate</div>
+  </div>
+</div>
+
+
+
+
 <section class="bg-blue pt-4">
   <div class="container-fluid">
     <div class="row my-4">
@@ -19,7 +31,7 @@
     </div>
 
     <div class="row">
-      <div class="p-0 col-4">
+      <div class="p-0 col-4" [@focusPanel]='state'>
         <a href="assets/img/portfolio/fullsize/1.jpg">
           <img class="img-fluid" src="assets/img/portfolio/fullsize/1.jpg" alt="Portfolio 1">
         </a>

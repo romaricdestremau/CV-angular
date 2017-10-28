@@ -1,52 +1,24 @@
-<div class="nav-container" class="static">
-  <nav role="navigation" class="navbar navbar-default navbar-static-top">
+<div class="nav-container fixed-top">
+  <nav role="navigation" class="navbar">
     <div class="container justify-content-end">
-      <ul class="nav nav-pills">
+      <ul class="nav nav-pills" [class.page-top-bg]="navIsFixed">
         <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#header">Header</a>
+          <a class="text-uppercase nav-link" [class.page-top-a-white]="navIsFixed" href="#header">Header</a>
         </li>
         <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#formations">Formations</a>
+          <a class="text-uppercase nav-link" [class.page-top-a-white]="navIsFixed" href="#formations">Formations</a>
         </li>
         <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#experiences">Expériences</a>
+          <a class="text-uppercase nav-link" [class.page-top-a-white]="navIsFixed" href="#experiences">Expériences</a>
         </li>
         <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#competences">Compétences</a>
+          <a class="text-uppercase nav-link" [class.page-top-a-white]="navIsFixed" href="#competences">Compétences</a>
         </li>
         <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#hobbies">Hobbies</a>
+          <a class="text-uppercase nav-link" [class.page-top-a-white]="navIsFixed" href="#hobbies">Hobbies</a>
         </li>
         <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#portfolio">Portfolio</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
-
-<div class="nav-container fixed-top" [class.invisible]="PageIsTop">
-  <nav role="navigation" class="navbar navbar-default navbar-static-top">
-    <div class="container justify-content-end">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#header">Header</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#formations">Formations</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#experiences">Expériences</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#competences">Compétences</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#hobbies">Hobbies</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-uppercase nav-link" href="#portfolio">Portfolio</a>
+          <a class="text-uppercase nav-link" [class.page-top-a-white]="navIsFixed" href="#portfolio">Portfolio</a>
         </li>
       </ul>
     </div>

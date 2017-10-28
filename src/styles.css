@@ -1,3 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/bootstrap.min.css";
 @import "assets/font-awesome.min.css";
+@import "./../node_modules/animate.css/animate.min.css";

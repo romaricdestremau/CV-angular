@@ -1,11 +1,16 @@
-nav a{
-    color: rgba(255,255,255,.7);
-    color: white;
-}
-nav a:hover{
-    color:white;
+ul{
+  background-color: rgba(255,255,255,.7);
 }
 
-li{
+.page-top-bg{
   background-color: rgba(19, 132, 149, 0.8);
+  color: white;
+
+}
+
+.page-top-a-white{
+    color: white;
+}
+.page-top-a-white:hover{
+    color: black;
 }

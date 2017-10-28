@@ -13,6 +13,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 // Import manuel
 import { DataService } from './services/data.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { DataService } from './services/data.service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule
   ],
   providers: [DataService],
