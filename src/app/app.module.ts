@@ -14,6 +14,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 // Import manuel
 import { DataService } from './services/data.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AgmCoreModule } from '@agm/core';
+
 
 
 @NgModule({
@@ -29,7 +31,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpModule
+    HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDt9K2itm3hyv_g77RlGS4ggdP-asASq4g'
+    })
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

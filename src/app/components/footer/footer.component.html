@@ -1,33 +1,33 @@
 <footer>
-  <div class="container p-5">
+  <div class="container py-5">
     <div class="row p-5">
       <div class="col-12 mx-auto text-center">
-        <h2>Contactez moi!</h2>
+        <h3>{{ title }}</h3>
       </div>
 
       <div class="col-12">
         <hr class="col-4">
       </div>
 
+    </div>
 
-      <div class="col-6 text-center">
-        <i class="fa fa-4x fa-phone"></i>
-        <h3>0699225159</h3>
+    <div class="row">
+      <div class="col-6">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
       </div>
-      <div class="col-6 text-center">
-        <i class="fa fa-4x fa-envelope-o"></i>
-        <h4>
-          <a href="mailto:romaric.destremau@gmail.com" class="text-black">romaric.destremau@gmail.com</a>
-        </h4>
+
+      <div class="col-6">
+        <div class="list-group">
+          <a class="list-group-item" href="#"><i class="fa fa-male fa-fw" aria-hidden="true"></i>&nbsp; {{name}}</a>
+          <a class="list-group-item" href="#"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; {{phone}}</a>
+          <a class="list-group-item" href="#"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>&nbsp; {{email}}</a>
+          <a class="list-group-item" href="#"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>&nbsp; {{address}}</a>
+        </div>
       </div>
     </div>
   </div>
 
 
 </footer>
-<!-- 
-<ul>
-  <li>Name: {{footer.name}}</li>
-  <li>Age: {{footer.age}}</li>
-  <li>Email: {{footer.email}}</li>
-</ul> -->
