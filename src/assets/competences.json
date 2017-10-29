@@ -1,27 +1,26 @@
 [
   {
-    "informatique": "2013-2019",
-    "environnement": "Master en “Système d’Information,​ ​Cybersécurité​ ​et​ ​Big​ ​Data​”.",
-    "linguistiques": "ECE Paris (Ecole d'ingénieur généraliste et high-tech)",
+    "informatique": "Arduino - C - notion en Java",
+    "environnement": "Linux",
+    "linguistiques": "Français - Langue maternelle"
   },
   {
-    "informatique": "2015-2016",
-    "environnement": "Bachelor in science Engineering",
-    "linguistiques": "Université AAU​ ​Aalborg au Danemark",
+    "informatique": "PHP (notion en Symfony) / MySQL",
+    "environnement": "Git - Github / Bitbucket",
+    "linguistiques": "Anglais       - Bilingue (TOEIC C2)"
   },
   {
-    "informatique": "2013-2019",
-    "environnement": "Master en “Système d’Information,​ ​Cybersécurité​ ​et​ ​Big​ ​Data​”.",
-    "linguistiques": "ECE Paris (Ecole d'ingénieur généraliste et high-tech)",
+    "informatique": "HTML / CSS / JavaScript",
+    "environnement": "Matlab - LaTeX",
+    "linguistiques": "Espagnol - Bilingue"
   },
   {
-    "informatique": "2015-2016",
-    "environnement": "Bachelor in science Engineering",
-    "linguistiques": "Université AAU​ ​Aalborg au Danemark",
+    "informatique": "Foundation - Bootstrap / Angular",
+    "environnement": "Inkscape - éditeur de vecteur graphique",
+    "linguistiques": "Portugais - Courant"
   },
   {
-    "informatique": "2010-2013",
-    "environnement": "Baccalauréat S, option mathématiques",
-    "linguistiques": "Lycée Stanislas​ (Internat)",
+    "environnement": "Windows Server",
+    "linguistiques": "Russe - Débutant"
   }
 ]

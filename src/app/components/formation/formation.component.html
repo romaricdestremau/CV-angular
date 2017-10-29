@@ -74,7 +74,7 @@
     </div>
 
     <div class="row mt-5">
-      <table class="table table-condensed table-hover table-stripped table-responsive table-bordered">
+      <table class="table table-sm table-hover table-stripped table-responsive table-bordered">
         <thead>
           <tr>
             <th>Informatique</th>
@@ -82,20 +82,13 @@
             <th>Linguistiques</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>test</td>
-            <td>test</td>
-            <td>test</td>
-          </tr>
-        </tbody>
-        <!-- <tbody *ngFor="let competence of competences">
+        <tbody *ngFor="let competence of competences">
           <tr>
             <td>{{competence.informatique}}</td>
             <td>{{competence.environnement}}</td>
             <td>{{competence.linguistiques}}</td>
           </tr>
-        </tbody> -->
+        </tbody>
       </table>
 
     </div>
@@ -105,3 +98,11 @@
 
   </div>
 </section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <hr>
+    </div>
+  </div>
+</div>

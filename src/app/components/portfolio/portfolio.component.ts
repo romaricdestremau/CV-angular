@@ -15,17 +15,18 @@ import {
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
   animations: [
-    trigger('focusPanel', [
+    trigger('focusImage', [
         state('inactive', style({
             transform: 'scale(1)',
             backgroundColor: '#eee'
         })),
         state('active', style({
-            transform: 'scale(1.1)',
-            backgroundColor: '#cfd8dc'
+            transform: 'scale(2)',
+            backgroundColor: '#cfd8dc',
+            'z-index': '10',
         })),
-        transition('inactive => active', animate('100ms ease-in')),
-        transition('active => inactive', animate('100ms ease-out'))
+        transition('inactive => active', animate('200ms ease-in')),
+        transition('active => inactive', animate('200ms ease-out'))
     ]),
 
     trigger('movePanel', [
@@ -44,12 +45,9 @@ import {
 export class PortfolioComponent implements OnInit {
 
   state: string = 'inactive';
+  portfolio: Portfolio[] = [1,2,3,4,5,6,7,8,9,10,11,12];
 
-  toggleMove() {
-      this.state = (this.state === 'inactive' ? 'active' : 'inactive');
-      console.log("togglemove")
-  }
-  itemAnim() {
+  toggleZoom() {
       this.state = (this.state === 'inactive' ? 'active' : 'inactive');
       console.log("togglemove")
   }
@@ -59,11 +57,6 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
   }
 
-  clickportfolio() {
-    console.log("clik sur portfolio");
-  }
-  hoverportfolio() {
-    console.log("clik sur portfolio");
-  }
-
 }
+
+interface Portfolio{};

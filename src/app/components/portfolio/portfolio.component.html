@@ -1,16 +1,5 @@
 <div id="portfolio"></div>
 
-<div class="row">
-  <div class="columns">
-    <button (click)="toggleMove()">Press me for animation</button>
-  </div>
-  <div class="columns">
-    <div id="content" [@focusPanel]='state' [@movePanel]='state'>Look at me animate</div>
-  </div>
-</div>
-
-
-
 
 <section class="bg-blue pt-4">
   <div class="container-fluid">
@@ -31,56 +20,8 @@
     </div>
 
     <div class="row">
-      <div class="p-0 col-4" [@focusPanel]='state'>
-        <a href="assets/img/portfolio/fullsize/1.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/1.jpg" alt="Portfolio 1">
-        </a>
-      </div>
-      <div class="p-0 col-12 col-md-6 col-lg-4">
-        <a href="assets/img/portfolio/fullsize/2.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/2.jpg" alt="Portfolio 1">
-        </a>
-      </div>
-      <div class="p-0 col-12 col-md-6 col-lg-4" >
-        <a href="assets/img/portfolio/fullsize/3.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/3.jpg" alt="Portfolio 1">
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="p-0 col-12 col-md-6 col-lg-4">
-        <a href="assets/img/portfolio/fullsize/4.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/4.jpg" alt="Portfolio 1">
-        </a>
-      </div>
-      <div class="p-0 col-12 col-md-6 col-lg-4">
-        <a href="assets/img/portfolio/fullsize/5.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/5.jpg" alt="Portfolio 1">
-        </a>
-      </div>
-      <div class="p-0 col-12 col-md-6 col-lg-4">
-        <a href="assets/img/portfolio/fullsize/6.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/6.jpg" alt="Portfolio 1">
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="p-0 col-12 col-md-6 col-lg-4">
-        <a href="assets/img/portfolio/fullsize/7.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/7.jpg" alt="Portfolio 1">
-        </a>
-      </div>
-      <div class="p-0 col-12 col-md-6 col-lg-4">
-        <a href="assets/img/portfolio/fullsize/8.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/8.jpg" alt="Portfolio 1">
-        </a>
-      </div>
-      <div class="p-0 col-12 col-md-6 col-lg-4">
-        <a href="assets/img/portfolio/fullsize/9.jpg">
-          <img class="img-fluid" src="assets/img/portfolio/fullsize/9.jpg" alt="Portfolio 1">
-        </a>
+      <div class="col-3 p-0" *ngFor="let image of portfolio">
+        <img [@focusImage]="state" (click)="toggleZoom()" class="img-fluid" src="assets/img/portfolio/fullsize/{{image}}.jpg" alt="Portfolio 1">
       </div>
     </div>
 
