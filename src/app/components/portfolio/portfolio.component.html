@@ -1,11 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <hr>
+    </div>
+  </div>
+</div>
+
+
 <div id="portfolio"></div>
 
 
 <section class="bg-blue pt-4">
   <div class="container-fluid">
     <div class="row my-4">
-      <div class="col-6 text-right">
-        <h1>Mon Voyage en image!</h1>
+      <div class="col-1"></div>
+      <img class="col-1" src="../../assets/img/bean bike.gif" alt="bean bike">
+
+      <div class="col-4 text-right">
+        <h3>{{title}}</h3>
       </div>
 
       <div class="col-2 text-right">
@@ -19,9 +31,9 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-3 p-0" *ngFor="let image of portfolio">
-        <img [@focusImage]="state" (click)="toggleZoom()" class="img-fluid" src="assets/img/portfolio/fullsize/{{image}}.jpg" alt="Portfolio 1">
+    <div class="row images">
+      <div class="col-3 p-0" *ngFor="let image of images" >
+        <img [class.selected]="image === selectedImage" [@focusImage]="image.state" (click)="toggleZoom(images)" class="img-fluid" src="assets/img/portfolio/fullsize/{{image.id}}.jpg" alt="Portfolio 1">
       </div>
     </div>
 

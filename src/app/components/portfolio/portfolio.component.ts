@@ -9,6 +9,22 @@ import {
  } from '@angular/core';
  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { Image } from './image';
+
+const IMAGES: Image[] = [
+  { id: 1, state: 'inactive' },
+  { id: 2, state: 'inactive' },
+  { id: 3, state: 'inactive' },
+  { id: 4, state: 'inactive' },
+  { id: 5, state: 'inactive' },
+  { id: 6, state: 'inactive' },
+  { id: 7, state: 'inactive' },
+  { id: 8, state: 'inactive' },
+  { id: 9, state: 'inactive' },
+  { id: 10, state: 'inactive' },
+  { id: 11, state: 'inactive' },
+  { id: 12, state: 'inactive' }
+];
 
 @Component({
   selector: 'app-portfolio',
@@ -27,36 +43,27 @@ import {
         })),
         transition('inactive => active', animate('200ms ease-in')),
         transition('active => inactive', animate('200ms ease-out'))
-    ]),
-
-    trigger('movePanel', [
-
-        transition('void => *', [
-            animate(600, keyframes([
-                style({opacity: 0, transform: 'translateY(-200px)', offset: 0}),
-                style({opacity: 1, transform: 'translateY(25px)', offset: .75}),
-                style({opacity: 1, transform: 'translateY(0)', offset: 1}),
-            ]))
-        ])
-
     ])
   ] //fin animation
 }) // fin component
-export class PortfolioComponent implements OnInit {
 
-  state: string = 'inactive';
-  portfolio: Portfolio[] = [1,2,3,4,5,6,7,8,9,10,11,12];
+export class PortfolioComponent implements OnInit {
+  title = 'Mon voyage en image!';
+  images = IMAGES;
+  selectedImage: Image;
 
   toggleZoom() {
-      this.state = (this.state === 'inactive' ? 'active' : 'inactive');
+      this.selectedImage.state = (this.selectedImage.state === 'inactive' ? 'active' : 'inactive');
       console.log("togglemove")
   }
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
 
-interface Portfolio{};
+interface Portfolio{
+  state: string;
+  id: number;
+};

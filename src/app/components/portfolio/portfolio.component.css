@@ -1,9 +1,15 @@
-.bg-blue{
-    background-color: skyblue;
-}
-
 img{
   height:100%;
   width:100%;
   margin: auto;
 }
+
+hr{
+  border-top: 3px double #8c8b8b;
+}
+
+.images img:hover {
+      color: #607D8B;
+      background-color: #DDD;
+      left: .1em;
+    }
